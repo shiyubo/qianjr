@@ -1,5 +1,5 @@
 <template>
-  <mt-tabbar v-model="headNav" fixed>
+  <mt-tabbar v-model="selected" fixed>
     <mt-tab-item id="首页" @click.native="$router.push('/home')">
       <img slot="icon" src="../assets/logo.png">
       首页
