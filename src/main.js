@@ -10,11 +10,6 @@ Vue.use(MintUI)
 new Vue({
   el: '#app',
   router,
-  data: function () {
-    return {
-      selected: '首页'
-    }
-  },
   template: '<App/>',
   components: { App }
 })

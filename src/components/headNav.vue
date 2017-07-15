@@ -19,8 +19,16 @@
   </mt-tabbar>
 </template>
 
-<script>
-
+<script type="es6">
+  import { Navbar, TabItem } from 'mint-ui';
+  export default {
+    data () {
+      return {
+        selected: '首页'
+      }
+    },
+    components: { Navbar, TabItem }
+  }
 </script>
 
 <style>
