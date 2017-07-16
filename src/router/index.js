@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePage from '../views/home.vue'
-import ProductPage from '../views/product.vue'
-import AccountPage from '../views/account.vue'
-import MorePage from '../views/more.vue'
+import HomePage from '@/views/home.vue'
+import ProductPage from '@/views/product.vue'
+import AccountPage from '@/views/account.vue'
+import MorePage from '@/views/more.vue'
 
 Vue.use(VueRouter)
 
