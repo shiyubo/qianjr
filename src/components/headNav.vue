@@ -1,18 +1,18 @@
 <template>
   <mt-tabbar v-model="headNav" fixed>
-    <mt-tab-item id="tabbar1" @click.native="goRouter(1)">
+    <mt-tab-item id="tabbar-1" @click.native="goRouter(1)">
       <img slot="icon" src="../assets/logo.png">
       首页
     </mt-tab-item>
-    <mt-tab-item id="tabbar2" @click.native="goRouter(2)">
+    <mt-tab-item id="tabbar-2" @click.native="goRouter(2)">
       <img slot="icon" src="../assets/logo.png">
       理财
     </mt-tab-item>
-    <mt-tab-item id="tabbar3" @click.native="goRouter(3)">
+    <mt-tab-item id="tabbar-3" @click.native="goRouter(3)">
       <img slot="icon" src="../assets/logo.png">
       我的
     </mt-tab-item>
-    <mt-tab-item id="tabbar4" @click.native="goRouter(4)">
+    <mt-tab-item id="tabbar-4" @click.native="goRouter(4)">
       <img slot="icon" src="../assets/logo.png">
       更多
     </mt-tab-item>
@@ -20,15 +20,15 @@
 </template>
 
 <script type="es6">
-  import { Navbar, TabItem } from 'mint-ui'
+  import { Tabbar, TabItem } from 'mint-ui'
   import{ mapState } from 'vuex'
   export default {
     /*data () {
       return {
-        selected: '首页'
+        selected: 'tabbar1'
       }
     },*/
-    components: { Navbar, TabItem },
+    components: { Tabbar, TabItem },
     computed: {
       ...mapState(['headNav'])
     },

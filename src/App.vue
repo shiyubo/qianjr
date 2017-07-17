@@ -6,8 +6,8 @@
       </router-link>
       <mt-button icon="more" slot="right"></mt-button>
     </mt-header>-->
-    <head-logo></head-logo>
-    <head-nav></head-nav>
+    <v-header></v-header>
+    <v-tabbar></v-tabbar>
     <div class="container">
       <!--<keep-alive>-->
         <router-view></router-view>
@@ -21,7 +21,8 @@
   import headNav from './components/headNav.vue'
   export default {
     components: {
-      headLogo, headNav
+      'v-header': headLogo,
+      'v-tabbar': headNav
     }
   }
 </script>
