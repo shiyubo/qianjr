@@ -9,9 +9,9 @@
     <head-logo></head-logo>
     <head-nav></head-nav>
     <div class="container">
-      <keep-alive>
+      <!--<keep-alive>-->
         <router-view></router-view>
-      </keep-alive>
+      <!--</keep-alive>-->
     </div>
   </div>
 </template>
@@ -26,6 +26,12 @@
   }
 </script>
 
-<style>
-
+<style scoped>
+  .container {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    bottom: 55px;
+    overflow: hidden;
+  }
 </style>
