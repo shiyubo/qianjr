@@ -4,7 +4,7 @@ import store from './store'
 import router from './router'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
-import './common/js/rem'
+import rem from './rem.js'
 
 Vue.use(MintUI)
 
