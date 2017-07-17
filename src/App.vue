@@ -32,6 +32,7 @@
     position: absolute;
     top: 40px;
     bottom: 55px;
+    width: 100%;
     overflow: hidden;
   }
 </style>
