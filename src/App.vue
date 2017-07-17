@@ -16,13 +16,18 @@
   </div>
 </template>
 
-<script>
-  import headLogo from './components/headLogo.vue'
-  import headNav from './components/headNav.vue'
+<script type="es6">
+  import header from './components/header.vue'
+  import tabbar from './components/tabbar.vue'
   export default {
+    data () {
+      return {
+
+      }
+    },
     components: {
-      'v-header': headLogo,
-      'v-tabbar': headNav
+      'v-header': header,
+      'v-tabbar': tabbar
     }
   }
 </script>
