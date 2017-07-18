@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    headNav: 'tabbar1'
+    headNav: 'tabbar-1'
   },
   mutations: {
     setHeadNav: (state, index) => {
-      state.headNav = 'tabbar' + index
+      state.headNav = 'tabbar-' + index
     }
   }
 })

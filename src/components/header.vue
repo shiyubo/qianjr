@@ -1,6 +1,6 @@
 <template>
   <div class="head-logo">
-    <mt-header title="首页"></mt-header>
+    <mt-header fixed title="首页"></mt-header>
   </div>
 </template>
 

@@ -1,17 +1,47 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>111111111111111111111111111</h2>
+  <div class="hello" ref="wrapper">
+    <div class="content">
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+      <h1>1111111</h1>
+    </div>
   </div>
 </template>
 
 <script>
+import BScroll from 'better-scroll'
 export default {
-  name: 'hello',
   data () {
     return {
-      msg: '111111111111111'
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.scroll = new BScroll(this.$refs.wrapper, {
+        click: true,
+        probeType: 3
+      })
+//      this.scroll.on('scroll', (pos) => {
+//        this.scrollY = Math.abs(Math.round(pos.y))
+//      })
+    })
   }
 }
 </script>
@@ -19,6 +49,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   h1 {
-    margin: 100px;
+    height: 60px;
   }
 </style>

@@ -6,26 +6,39 @@
       </router-link>
       <mt-button icon="more" slot="right"></mt-button>
     </mt-header>-->
-    <head-logo></head-logo>
-    <head-nav></head-nav>
+    <v-header></v-header>
+    <v-tabbar></v-tabbar>
     <div class="container">
-      <keep-alive>
+      <!--<keep-alive>-->
         <router-view></router-view>
-      </keep-alive>
+      <!--</keep-alive>-->
     </div>
   </div>
 </template>
 
-<script>
-  import headLogo from './components/headLogo.vue'
-  import headNav from './components/headNav.vue'
+<script type="es6">
+  import header from './components/header.vue'
+  import tabbar from './components/tabbar.vue'
   export default {
+    data () {
+      return {
+
+      }
+    },
     components: {
-      headLogo, headNav
+      'v-header': header,
+      'v-tabbar': tabbar
     }
   }
 </script>
 
-<style>
-
+<style scoped>
+  .container {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    bottom: 55px;
+    width: 100%;
+    overflow: hidden;
+  }
 </style>

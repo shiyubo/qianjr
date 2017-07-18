@@ -7,7 +7,6 @@
 
 <script>
 export default {
-  name: 'hello',
   data () {
     return {
       msg: '3333333333333333'
